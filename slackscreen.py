@@ -37,7 +37,6 @@ not_attached=True
 while not_attached == True:
   logfile=os.popen("for file in `ls -rt "+logdir+"`; do A=$(tail -2 "+logdir+"$file); if echo $A | grep -q ^"+rand_string+"; then echo $file;fi;done").read()
   log_location=(logdir+logfile).strip()
-  time.sleep(1)
   if os.path.isfile(log_location):
       not_attached = False
       print "[ OK  ] Terminal "+rand_string+ " found and attached, its broadcasting to Slack now!"
