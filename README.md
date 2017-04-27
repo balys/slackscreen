@@ -29,5 +29,6 @@ Paste the command below in the terminal you would like to attach to, then wait f
 
 As you see it will broadcast the output until your press CTRL+C, then it will also delete the message in slack completely.
 
+![Running in Slack gif](https://github.com/balys/slackscreen/raw/master/readmefiles/slackscreen_example2.gif)
 
 ![Running in Slack gif](https://github.com/balys/slackscreen/raw/master/readmefiles/slackscreen_example.gif)
