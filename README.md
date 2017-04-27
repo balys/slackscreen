@@ -11,6 +11,22 @@ iTerm->Profiles->Open Profiles->Default->[Edit Profiles]->[Session Tab]-> "Autom
 Then in one iterm session launch the slackscreen tool. This will generate an echo command you need to paste into the session you want to broadcast.
 You can paste it to any existing session (in screen, remote SSH'ed, etc.)
 
+
+Firstly update the slackscreen.py file with correct things:
+
+````
+######################################
+sc = SlackClient('xoxp-XXXXXXXXXX-XXXXXXXXXX-XXXXXXXXXX-XXXXXXXXXX')    # Generate it from https://api.slack.com/tokens
+mychannel="@yourusername"                                               # The terminal window will pop up in this channel, @user or #channel
+logdir="/Users/MyUsername/iTermLogs/"                                         # Location for Iterm Logs as you set in Iterm2 Profile
+bot_username="slackscreen"                                                      # User which submits the message
+icon_emoji=":desktop_computer:"       
+console_height=25                                                         # Amount of lines to broadcast
+######################################
+````
+
+Then you can launch as such:
+
 ````
 ~/dev/slackscreen$ ./slackscreen.py
 

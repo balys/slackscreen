@@ -10,7 +10,6 @@ import uuid
 # Set iTerm session logging location in
 # iTerm->Profiles->Open Profiles->Default->[Edit Profiles]->[Session Tab]-> "Automatically log session input files in:"
 
-
 ######################################
 sc = SlackClient('xoxp-XXXXXXXXXX-XXXXXXXXXX-XXXXXXXXXX-XXXXXXXXXX')    # Generate it from https://api.slack.com/tokens
 mychannel="@yourusername"                                               # The terminal window will pop up in this channel, @user or #channel
