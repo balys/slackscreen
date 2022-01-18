@@ -1,8 +1,8 @@
 # slackscreen
-A tool to tail output of your iTerm2 session to slack channel.
+The tool to tail output of your iTerm2 session to slack channel.
 
 
-This works with Iterm2 https://www.iterm2.com
+This works with new Iterm2 https://www.iterm2.com
 This was only tested on MacOS Siera.
 
 You need to enable iTerm2 session logging in:
